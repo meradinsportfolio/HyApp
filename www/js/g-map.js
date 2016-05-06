@@ -43,7 +43,8 @@ $(document).on("pageshow", "#home", function() {
 		}
 	}, function(error) {
 		// onError
-		$("#gmap").append("error");
+		$("#gmap").append("code: " + error.code + "\n" +
+					"message: " + error.message + "\n");
 		console.log("code: " + error.code + "\n" +
 					"message: " + error.message + "\n");
 	}, {
