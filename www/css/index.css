@@ -117,16 +117,16 @@ h1 {
 /* Own added css */
 
 #gMapContent {
-    /*padding: 0;
+    padding: 0;
     position: absolute !important;
     top: 40px !important;
     right: 0;
     bottom: 0px !important;
-    left: 0 !important;*/
+    left: 0 !important;
 }
 
 #gmap {
-    /*height: 100%;
+    height: 100%;
     margin: 0;
-    padding: 0;*/
+    padding: 0;
 }
