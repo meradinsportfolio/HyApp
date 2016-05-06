@@ -49,8 +49,8 @@ $(document).on("pageshow", "#home", function() {
 					"message: " + error.message + "\n");
 	}, {
 		// options
-		maximumAge: 3000,
-		timeout: 5000,
+		maximumAge: 0,
+		timeout: 10000,
 		enableHighAccuracy: true
 	});
 });
