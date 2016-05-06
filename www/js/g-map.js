@@ -33,15 +33,17 @@ $(document).on("pageshow", "#home", function() {
 
 				// map is initialized, set mapInit true
 				mapInit = true;
+				$("#debug").append("succes");
 
 				getWildPokemon(position.coords);
 
 		} else {
 			// map is initialized
-
+			$("#debug").append("no succes");
 		}
 	}, function(error) {
 		// onError
+		$("#debug").append("error");
 		console.log("code: " + error.code + "\n" +
 					"message: " + error.message + "\n");
 	}, {
