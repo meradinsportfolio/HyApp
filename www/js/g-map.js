@@ -13,7 +13,7 @@ $(document).on("pageshow", "#home", function() {
 		if (!mapInit) {
 			// map is not initialized
 				// create new map
-
+			setTimeout(function(){
 				map = new google.maps.Map(document.getElementById("gmap"), {
 					center: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
 					zoom: 15,
@@ -36,7 +36,7 @@ $(document).on("pageshow", "#home", function() {
 				$("#gmap").append("succes");
 
 				getWildPokemon(position.coords);
-
+			});
 		} else {
 			// map is initialized
 			$("#gmap").append("no succes");
